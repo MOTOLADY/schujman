@@ -1,0 +1,73 @@
+.encabezado{
+    background-color: #88005b;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* espacio entre tÃ­tulo y logo */
+    align-items: center;
+    padding: 10px; /*espacio de relleno alrededor*/
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 2em; /* tamaÃ±o de letra */
+    margin: 0; /* eliminar margen predeterminado */
+}
+
+.logo {
+    height: 50px; /* altura del logo */
+    width: auto;
+    margin-left: auto; /* alinear el logo a la derecha */
+  }
+  
+  /* animaciÃ³n para hacer vibrar el elemento */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* cuando el mouse estÃ¡ sobre el elemento, se ejecuta la animaciÃ³n */
+  .logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  
+
+table{
+    border-collapse: collapse; /* colapsar bordes duplicados */
+    width: 100%;
+    font-size: 16px;
+}
+
+thead th{
+    background-color: #88005b; /* color de fondo oscuro para los encabezados */
+    color: #fff; /* color de letras claras */
+    padding: 8px;
+    text-align: left;
+}
+  
+tbody tr:nth-child(even){
+    background-color: #f2f2f2; /* color de fondo alternativo para las filas pares */
+}
+  
+tbody td{
+    border: 1px solid #000; /* bordes de 1px sÃ³lido gris */
+    padding: 8px;
+}
+  
+  /* estilo hover para resaltar filas */
+tbody tr:hover{
+    background-color: #ffc1da; /* color de fondo gris claro */
+}
+
+.fotos{
+    height: 50px; /* altura del logo */
+    width: auto; /* ancho ajustable */
+}
+.fotos:hover{
+    transition: filter 0.3s ease-in-out; /* animar el cambio del filtro */
+    filter: grayscale(100%); /* desactivar la escala de grises cuando el mouse se posicione sobre la imagen */
+}
